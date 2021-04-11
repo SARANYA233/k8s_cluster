@@ -1,0 +1,9 @@
+- hosts: ["tag_Name_K8S_Master"]
+  roles:
+          - name: "configure master node.."
+            role: "/root/task19/k8s_master"
+
+- hosts: ["tag_Name_K8S_Slave1", "tag_Name_K8S_Slave2"]
+  roles:
+          - name: "configure slave nodes..."
+            role: "/root/task19/k8s_slaves"
